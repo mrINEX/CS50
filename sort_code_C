@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+  int arr[5];
+  arr[0]=3; arr[1]=2; arr[2]=5; arr[3]=4; arr[4]=1;
+  for(int i=0; i<5; i++)
+  {
+    printf("%d ", arr[i]);
+  }
+  printf("\n");
+  
+  for(int i=0; i<5; i++)
+  {
+      int min=i;
+      for(j=j+1;j<5;j++)
+      {
+        if(arr[j]<arr[min])
+        min=j;
+      }
+      if(min!=i)
+      {
+        int swap;
+        swap=arr[i];
+        arr[i]=arr[min];
+        arr[min]=swap;
+      }
+  }
+  for(int i=0; i<5; i++)
+  {
+    printf("%d ", arr[i]);
+  }
+  printf("\n");
+}
