@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+  int size = sizeof(arr)/sizeof(arr[0]);
+  int count;
+  do
+  {
+    count=0;
+    for(int i=);i<size-1;i++)
+    {
+      if(arr[i]>arr[i+1])
+      {
+        int swap=arr[i];
+        arr[i]=arr[i+1];
+        arr[i+1]=swap;
+        count++;
+      }
+    }
+  }
+  while(count>0)
+}
